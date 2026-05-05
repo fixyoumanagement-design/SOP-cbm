@@ -43,7 +43,7 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-40 pb-24 px-6 max-w-7xl mx-auto border-x border-slate-50">
+      <section className="pt-32 md:pt-40 pb-16 md:pb-24 px-4 md:px-6 max-w-7xl mx-auto border-x border-slate-50">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -54,27 +54,27 @@ export default function App() {
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
             <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">Effective Date: April 22, 2026</span>
           </div>
-          <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-[0.9] mb-8">
+          <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-[0.9] mb-8">
             CollabMen.id <br />
             <span className="text-slate-400">Standard Operasional.</span>
           </h1>
-          <p className="text-lg md:text-xl text-slate-500 max-w-2xl leading-relaxed">
+          <p className="text-base md:text-xl text-slate-500 max-w-2xl leading-relaxed">
             Selamat datang di Portal SOP resmi Manajemen KOL Talent Pria. Kami menghubungkan talent premium dengan brand terkemuka untuk mengoptimalkan karier dan pendapatan profesional Anda.
           </p>
         </motion.div>
       </section>
 
       {/* Section 1: Pendahuluan & Tujuan */}
-      <section id="about" className="py-24 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 border-x border-slate-50 border-t">
+      <section id="about" className="py-16 md:py-24 px-4 md:px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 border-x border-slate-50 border-t">
         <motion.div {...FADE_UP} className="space-y-6">
           <h2 className="text-xs font-bold uppercase tracking-widest text-slate-400 flex items-center gap-2">
             <ChevronRight size={14} /> 01. Pendahuluan
           </h2>
-          <div className="bg-slate-50 p-10 space-y-4">
-            <p className="text-xl font-medium leading-relaxed italic">
+          <div className="bg-slate-50 p-6 md:p-10 space-y-4">
+            <p className="text-lg md:text-xl font-medium leading-relaxed italic">
               "CollabMen.id merupakan manajemen KOL yang berfokus secara eksklusif pada talent pria."
             </p>
-            <p className="text-slate-500">
+            <p className="text-sm md:text-base text-slate-500">
               Dokumen web ini mendefinisikan regulasi, alur kerja, sistem pembayaran, serta klausul sanksi yang wajib dipatuhi oleh seluruh talent di bawah naungan kami.
             </p>
           </div>
@@ -83,8 +83,8 @@ export default function App() {
           <h2 className="text-xs font-bold uppercase tracking-widest text-slate-400 flex items-center gap-2">
             <ChevronRight size={14} /> 02. Tujuan
           </h2>
-          <div className="p-10 space-y-4">
-            <p className="text-slate-600 leading-loose">
+          <div className="p-6 md:p-10 space-y-4">
+            <p className="text-sm md:text-base text-slate-600 leading-loose">
               Instrumen ini disusun untuk memastikan seluruh talent memahami dan mengimplementasikan protokol operasional yang telah ditetapkan guna menyelaraskan ekspektasi manajemen, seleksi, dan ketepatan waktu administratif.
             </p>
             <div className="flex gap-4">
@@ -96,12 +96,12 @@ export default function App() {
       </section>
 
       {/* Section 2: Glossary */}
-      <section className="py-24 px-6 max-w-7xl mx-auto border-x border-slate-50 border-t bg-slate-900 text-white">
-        <motion.div {...FADE_UP} className="mb-12">
+      <section className="py-16 md:py-24 px-4 md:px-6 max-w-7xl mx-auto border-x border-slate-50 border-t bg-slate-900 text-white">
+        <motion.div {...FADE_UP} className="mb-0 md:mb-12">
           <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-8 tracking-[0.3em]">
             03. Singkatan Penting
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-slate-800 border border-slate-800">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-slate-800 border border-slate-800">
             {[
               { label: 'PC', desc: 'Private Chat with admin/brand' },
               { label: 'MG', desc: 'Management CollabMen.id' },
@@ -161,13 +161,13 @@ export default function App() {
       </section>
 
       {/* Section 4: Workflow Map */}
-      <section id="workflow" className="py-24 px-6 max-w-7xl mx-auto border-x border-slate-50 border-t bg-slate-50">
-        <motion.div {...FADE_UP} className="max-w-4xl mx-auto text-center mb-16">
+      <section id="workflow" className="py-16 md:py-24 px-4 md:px-6 max-w-7xl mx-auto border-x border-slate-50 border-t bg-slate-50">
+        <motion.div {...FADE_UP} className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
           <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-slate-400 mb-4">Operations</h2>
-          <h3 className="text-4xl font-bold tracking-tight">Campaign Workflow</h3>
+          <h3 className="text-3xl md:text-4xl font-bold tracking-tight">Campaign Workflow</h3>
         </motion.div>
         
-        <div className="max-w-5xl mx-auto grid gap-12 relative">
+        <div className="max-w-5xl mx-auto grid gap-8 md:gap-12 relative">
           <div className="absolute left-[31px] md:left-1/2 top-0 bottom-0 w-px bg-slate-200" />
           
           {[
@@ -179,16 +179,16 @@ export default function App() {
             <motion.div 
               key={item.step}
               {...FADE_UP}
-              className={`flex flex-col md:flex-row items-center gap-12 ${idx % 2 === 0 ? '' : 'md:flex-row-reverse md:text-right'}`}
+              className={`flex flex-col md:flex-row items-center gap-6 md:gap-12 ${idx % 2 === 0 ? '' : 'md:flex-row-reverse md:text-right'}`}
             >
-              <div className="md:w-1/2 flex items-center justify-center">
-                <div className="bg-white p-8 border border-slate-100 shadow-sm w-full">
+              <div className="md:w-1/2 flex items-center justify-center w-full">
+                <div className="bg-white p-6 md:p-8 border border-slate-100 shadow-sm w-full">
                   <div className="text-[10px] font-bold text-slate-400 mb-2">STEP {item.step}</div>
-                  <h4 className="text-lg font-bold uppercase tracking-widest mb-4">{item.title}</h4>
-                  <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+                  <h4 className="text-base md:text-lg font-bold uppercase tracking-widest mb-4">{item.title}</h4>
+                  <p className="text-slate-500 text-xs md:text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
-              <div className="relative z-10 w-16 h-16 bg-slate-900 text-white flex items-center justify-center font-bold">
+              <div className="relative z-10 w-12 md:w-16 h-12 md:h-16 bg-slate-900 text-white flex items-center justify-center font-bold text-sm md:text-base shrink-0">
                 {item.step}
               </div>
               <div className="hidden md:block md:w-1/2" />
@@ -238,16 +238,16 @@ export default function App() {
       </section>
 
       {/* Section 6: Payment Terms Section */}
-      <section id="payment" className="py-24 px-6 max-w-7xl mx-auto border-x border-slate-50 border-t bg-slate-50">
-        <div className="max-w-4xl mx-auto border border-slate-200 bg-white p-12">
+      <section id="payment" className="py-16 md:py-24 px-4 md:px-6 max-w-7xl mx-auto border-x border-slate-50 border-t bg-slate-50">
+        <div className="max-w-4xl mx-auto border border-slate-200 bg-white p-6 md:p-12">
           <motion.div {...FADE_UP} className="space-y-8">
             <div className="flex justify-between items-start">
-              <h2 className="text-2xl font-bold tracking-tight underline decoration-4 decoration-slate-900 underline-offset-8 uppercase">Terms of Payment</h2>
-              <CreditCard className="text-slate-200" size={40} />
+              <h2 className="text-xl md:text-2xl font-bold tracking-tight underline decoration-4 decoration-slate-900 underline-offset-8 uppercase">Terms of Payment</h2>
+              <CreditCard className="text-slate-200 shrink-0" size={32} />
             </div>
             <div className="space-y-6 text-slate-600">
               <p className="text-sm font-medium">Pembayaran kompensasi diatur oleh regulasi berikut:</p>
-              <ul className="grid md:grid-cols-2 gap-8 text-xs font-bold uppercase tracking-wider">
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 text-[11px] md:text-xs font-bold uppercase tracking-wider">
                 <li className="flex gap-4 items-start">
                   <span className="text-slate-900">01</span>
                   Kewajiban tuntas sesuai brief kampanye secara progresif.
