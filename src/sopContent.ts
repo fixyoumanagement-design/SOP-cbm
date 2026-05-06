@@ -12,6 +12,7 @@ export const SOP_CONTENT = `
 | DOCUMENT CONTROL | |
 | :--- | :--- |
 | **Document Name** | Standard Operating Procedure for CollabMen.id |
+| **Version** | 2.0 |
 | **Effective Date** | April 22, 2026 |
 | **Department** | Talent Management |
 
